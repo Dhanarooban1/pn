@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peershala</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="min-h-screen bg-gray-100">
+        <header class="bg-black shadow">
+            <nav>
+                <!-- Top Bar -->
+                <div class="top-bar">
+                    <div class="container">
+                        <div class="top-bar-content">
+                            <span class="email-contact">
+                                <i class="fas fa-envelope"></i>
+                                <span>peershalabatch@gmail.com</span>
+                            </span>
+                            <div class="social-icons">
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-linkedin"></i>
+                                <i class="fab fa-facebook"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Navigation -->
+                <div class="main-nav container">
+                    <div class="nav-content">
+                        <img src="Logo.png" alt="Logo" class="site-logo">
+
+                        <!-- Mobile Menu Button -->
+                        <button class="mobile-menu-btn" id="mobileMenuBtn">
+                            <i class="fas fa-bars"></i>
+                        </button>
+
+                        <!-- Desktop Menu -->
+                        <div class="desktop-menu">
+                            <a href="#" class="nav-link">HOME</a>
+                            <a href="#" class="nav-link">ABOUT US</a>
+                            <a href="#" class="nav-link">EVENTS</a>
+                            <a href="#" class="nav-link">MENTORS</a>
+                            <a href="#" class="nav-link">STUDENTS</a>
+                            <a href="#" class="nav-link">GET INVOLVED</a>
+                            <button class="register-btn">REGISTER</button>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Menu -->
+                    <div class="mobile-menu" id="mobileMenu">
+                        <a href="#" class="nav-link">HOME</a>
+                        <a href="#" class="nav-link">ABOUT US</a>
+                        <a href="#" class="nav-link">EVENTS</a>
+                        <a href="#" class="nav-link">MENTORS</a>
+                        <a href="#" class="nav-link">STUDENTS</a>
+                        <a href="#" class="nav-link">GET INVOLVED</a>
+                        <button class="register-btn">REGISTER</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Slideshow Section -->
+                <div class="slideshow-container">
+                    <!-- Updated Navigation Buttons with Icons -->
+                    <button class="slide-btn prev-btn" onclick="prevSlide()">
+                        <i class="fas fa-fast-backward"></i>
+                    </button>
+            
+                    <button class="slide-btn next-btn" onclick="nextSlide()">
+                        <i class="fas fa-fast-forward"></i>
+                    </button>
+            
+                    <!-- Slideshow Content Container -->
+                    <div class="slideshow-content" id="slideshowContent">
+                        <div id="slide1" class="slide background-image">
+                            <h1>Join Our Free Webinars</h1>
+                            <p>Enhance your skills and knowledge with our free, expert-led webinars. Register now to secure your spot!</p>
+                            <button>Join a Webinar</button>
+                        </div>
+            
+                        <div id="slide2" class="slide background-image1" style="display: none;">
+                            <h1>Volunteer as a Mentor</h1>
+                            <p>Share your expertise and make a difference in a student's life. Volunteer as a mentor today!</p>
+                            <button>Become a Mentor</button>
+                        </div>
+            
+                        <div id="slide3" class="slide background-image2" style="display: none;">
+                            <h1>Support Our Cause</h1>
+                            <p>Support our mission to provide free educational resources. Your contribution can change lives. Donate today!</p>
+                            <button>Donate Now</button>
+                        </div>
+                    </div>
+            </div>
+
+            <!-- About Section -->
+            <section class="about-section">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h1 class="section-tag">- ABOUT US</h1>
+                        <h2 class="section-title">Our Aspirations & Goals</h2>
+                        <h3 class="section-subtitle">Peershala: Building skills together.</h3>
+                        <p class="section-description">
+                            Peershala empowers students through dynamic, peer-driven learning and cutting-edge tools for academic and future success.
+                        </p>
+
+                        <div class="mission-vision-grid">
+                            <div class="info-box">
+                                <h3>Mission</h3>
+                                <p>Peershala's mission is to empower students with skills, foster a dynamic learning community, and provide mentorship for academic and professional success.</p>
+                            </div>
+                            <div class="info-box">
+                                <h3>Vision</h3>
+                                <p>Peershala envisions limitless education, fostering lifelong learning and growth to develop adaptable leaders through mentorship and knowledge sharing.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-images">
+                        <div class="image-column">
+                            <div class="image-container">
+                                <img src="Image4.jpeg" alt="Student walking with backpack">
+                            </div>
+                            <div class="yellow-block"></div>
+                        </div>
+                        <div class="image-column">
+                            <div class="blue-block"></div>
+                            <div class="image-container">
+                                <img src="Image1.jpeg" alt="Students studying">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Milestone Section -->
+            <section class="milestone-section">
+                <div class="milestone-content">
+                    <h2 class="section-tag">- MILESTONE</h2>
+                    <h3 class="section-title">Achievements</h3>
+
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <p class="stat-value">99%</p>
+                            <p class="stat-label">Members</p>
+                        </div>
+                        <div class="stat-item">
+                            <p class="stat-value">100+</p>
+                            <p class="stat-label">Workshops</p>
+                        </div>
+                        <div class="stat-item">
+                            <p class="stat-value">15K+</p>
+                            <p class="stat-label">Beneficiaries</p>
+                        </div>
+                        <div class="stat-item">
+                            <p class="stat-value">15K+</p>
+                            <p class="stat-label">Volunteers</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gallery Section -->
+            <section class="gallery-section">
+                <div class="gallery-header">
+                    <div class="header-text">
+                        <h2 class="section-tag">- GALLERY</h2>
+                        <h3 class="section-title">Our Gallery</h3>
+                    </div>
+                    <p class="gallery-description">
+                        Browse through our gallery to see highlights from our webinars, seminars, and mentorship programs, showcasing the positive impact we've made.
+                    </p>
+                </div>
+
+                <div class="gallery-nav">
+                    <button class="nav-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="nav-btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="gallery-grid">
+                    <!-- Gallery images will be populated here -->
+                </div>
+
+                <div class="gallery-footer">
+                    <button class="view-more-btn">View More</button>
+                </div>
+            </section>
+
+            <!-- Team Section -->
+            <section class="team-section">
+                <div class="team-header">
+                    <span class="section-tag">- TEAM</span>
+                    <h2 class="section-title">Meet Our Team</h2>
+                </div>
+
+                <div class="team-grid">
+                    <!-- Team members will be populated here -->
+                </div>
+
+                <div class="team-footer">
+                    <button class="view-more-btn">View More</button>
+                </div>
+            </section>
+
+            <!-- Events Section -->
+            <section class="events-section">
+                <div class="events-header">
+                    <h2 class="section-tag">- EVENTS</h2>
+                    <h3 class="section-title">Upcoming Bootcamps</h3>
+                </div>
+
+                <div class="events-grid">
+                    <div class="featured-event">
+                        <div class="event-date">
+                            <div>03</div>
+                            <div>Jul</div>
+                            <div>2024</div>
+                        </div>
+                        <div class="event-info">
+                            <h4>Tech Talk</h4>
+                            <p>8:30 AM - 12:30 PM, Sunday</p>
+                            <p>Zoom Call</p>
+                        </div>
+                    </div>
+
+                    <div class="upcoming-events">
+                        <!-- Event items will be populated here -->
+                    </div>
+                </div>
+
+                <div class="events-footer">
+                    <button class="all-events-btn">All Events</button>
+                </div>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section class="testimonials-section">
+                <h2 class="section-tag">- TESTIMONIALS -</h2>
+                <h2 class="section-title">Hear From Our Team & Students</h2>
+
+                <div class="testimonials-grid">
+                    <!-- Testimonial cards will be populated here -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <img src="Logo.png" alt="Peershala">
+                    </div>
+
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">ABOUT US</a></li>
+                            <li><a href="#">EVENTS</a></li>
+                            <li><a href="#">MENTORS</a></li>
+                            <li><a href="#">STUDENTS</a></li>
+                            <li><a href="#">GET INVOLVED</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="footer-social">
+                        <h3>Get Social Links</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        © 2024 Peershala. All rights reserved.
+                    </div>
+                    <div class="footer-links">
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
